@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="./assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.png">
 
     <title>Mannino Tende da Sole</title>
 
@@ -41,25 +41,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <img id="imgLogo" class="logo" src="images/logo.png" width="30%">
+              <img id="imgLogo" class="logo img-responsive" src="images/logo.png" height="60">
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
+                <li><a href="#gallery">Galleria</a></li>
+                <li><a href="#services">Servizi</a></li>
+                <li><a href="#about_us">Chi siamo</a></li>
+                <li><a href="#contact">Contatti</a></li>
               </ul>
             </div>
           </div>
@@ -125,22 +115,16 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <img class="img-circle" src="images/clocks.svg" width="140" height="140">
+          <h2>Facili da personalizzare</h2>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <img class="img-circle" src="images/pencils.svg" width="140" height="140">
+          <h2>Vasta gamma di colori</h2>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <img class="img-circle" src="images/clipboard.svg" width="140" height="140">
+          <h2>Garanzia di 2 anni</h2>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -173,13 +157,19 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div id="contact" class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Contatti</h2>
+          <h2><span class="text-muted">MG Corredo &amp; Arredo 2000 di Mannino Giovanni</span></h2>
+          <p class="lead">Via Boccaccio 29, Porto San Giorgio, 63822 &middot; Fermo (FM)</p>
+          <p class="lead"><span class="glyphicon glyphicon-earphone"> 348/3641048</span></p>
+          <p class="lead"><span class="glyphicon glyphicon-phone-alt"> 0734/679746</span></p>
+          <p class="lead">
+            <span class="glyphicon glyphicon-envelope"> <a href="mailto:corredo2000@email.it">corredo2000@email.it</a></span>
+          </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <iframe width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=via+boccaccio+29,+porto+san+giorgio&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=57.510723,108.457031&amp;ie=UTF8&amp;hq=&amp;hnear=Via+Giovanni+Boccaccio,+29,+Porto+San+Giorgio,+Fermo,+Marche,+Italy&amp;t=m&amp;z=15&amp;iwloc=A&amp;ll=43.171000,13.799938&amp;output=embed"></iframe>
         </div>
       </div>
 
@@ -192,7 +182,8 @@
       <footer>
         <p class="pull-right"><a href="#"><span class="glyphicon glyphicon-chevron-up"></span></a></p>
         
-        <p>&copy; MG Corredo &amp; Arredo 2000 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; MG Corredo &amp; Arredo 2000 &middot; Copyright @2014 &middot; <a href="mailto:corredo2000@email.it">corredo2000@email.it</a>
+        </p>
       </footer>
 
     </div><!-- /.container -->
