@@ -25,6 +25,25 @@
 
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fancybox").fancybox();
+        });
+    </script>
+
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -64,69 +83,76 @@
     <div class="container" style="margin-top: 30px;">
 
         <div class="row">
-
             <div class="col-lg-12">
                 <h1 class="page-header">Galleria</h1>
             </div>
-
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+                <a class="thumbnail fancybox" href="images/img_1_1.jpg" data-fancybox-group="gallery"
+                        title="Chalet Nerina - Porto San Giorgio">
+                    <img class="img-responsive" src="images/img_1_1.jpg" alt="" />
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+                <a class="thumbnail fancybox" href="images/img_1_2.jpg" data-fancybox-group="gallery"
+                        title="Chalet Nerina - Porto San Giorgio">
+                    <img class="img-responsive" src="images/img_1_2.jpg" alt="" />
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+                <a class="thumbnail fancybox" href="images/img_1_3.jpg" data-fancybox-group="gallery"
+                        title="Osteria Nonna Nina">
+                    <img class="img-responsive" src="images/img_1_3.jpg" alt="" />
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+                <a class="thumbnail fancybox" href="images/img_1_4.jpg" data-fancybox-group="gallery"
+                        title="Osteria Nonna Nina">
+                    <img class="img-responsive" src="images/img_1_4.jpg" alt="" />
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+                <a class="thumbnail fancybox" href="images/img_2_1.jpg" data-fancybox-group="gallery" 
+                        title="Chalet Florinda - Porto San Giorgio">
+                    <img class="img-responsive" src="images/img_2_1.jpg" alt="" />
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+                <a class="thumbnail fancybox" href="images/img_2_2.jpg" data-fancybox-group="gallery" 
+                        title="Chalet Florinda - Porto San Giorgio">
+                    <img class="img-responsive" src="images/img_2_2.jpg" alt="" />
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+                <a class="thumbnail fancybox" href="images/img_2_3.jpg" data-fancybox-group="gallery"
+                        title="Chalet Tropical - Porto San Giorgio">
+                    <img class="img-responsive" src="images/img_2_3.jpg" alt="" />
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+                <a class="thumbnail fancybox" href="images/img_2_4.jpg" data-fancybox-group="gallery">
+                    <img class="img-responsive" src="images/img_2_4.jpg" alt="" />
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+                <a class="thumbnail fancybox" href="images/img_3_1.jpg" data-fancybox-group="gallery"
+                        title="Caff&egrave; Florian">
+                    <img class="img-responsive" src="images/img_3_1.jpg" alt="" />
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+                <a class="thumbnail fancybox" href="images/img_3_2.jpg" data-fancybox-group="gallery"
+                        title="Caff&egrave; Florian">
+                    <img class="img-responsive" src="images/img_3_2.jpg" alt="" />
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+                <a class="thumbnail fancybox" href="images/img_3_3.jpg" data-fancybox-group="gallery">
+                    <img class="img-responsive" src="images/img_3_3.jpg" alt="" />
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300">
+                <a class="thumbnail fancybox" href="images/img_3_4.jpg" data-fancybox-group="gallery">
+                    <img class="img-responsive" src="images/img_3_4.jpg" alt="" />
                 </a>
             </div>
         </div>
@@ -134,9 +160,7 @@
         <hr>
          
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#"><span class="glyphicon glyphicon-chevron-up"></span></a></p>
-        
+      <footer>      
         <p>&copy; MG Corredo &amp; Arredo 2000 &middot; Copyright @2014 &middot; <a href="mailto:corredo2000@email.it">corredo2000@email.it</a>
         </p>
       </footer>
@@ -147,7 +171,6 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
   </body>
