@@ -28,6 +28,10 @@ body {
   z-index: 20;
 }
 
+.marginRightGlyphicon {
+  margin-right: 10px;
+}
+
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper .container {
   padding-right: 0;
@@ -97,7 +101,7 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -147,6 +151,12 @@ body {
     line-height: 1.4;
   }
 
+  .carousel-item {
+    margin: auto;
+    width: 900px;
+    height: 500px;
+  }
+
   .featurette-heading {
     font-size: 50px;
   }
@@ -154,6 +164,6 @@ body {
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    margin-top: 70px;
   }
 }
