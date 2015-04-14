@@ -74,16 +74,6 @@ body {
   height: 500px;
 }
 
-.btn-primary {
-    background-color: #B92800;
-    border-color: #B92800;
-}
-
-.btn-primary:focus {
-    background-color: #B92800;
-    border-color: #B92800;
-}
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
