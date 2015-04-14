@@ -11,35 +11,36 @@ body {
   margin-top: 5px;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-  color: white;
-  font-weight: bold;
-}
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
+.navbar {
+    background-color: #B92800;
+    border-bottom: 0px;
 }
 
-.marginRightGlyphicon {
+.navbar .navbar-nav > li > a {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #FFF;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #B92800;
+}
+
+.navbar-toggle {
+    border: 0px;
+}
+
+.margin-right-glyphicon {
   margin-right: 10px;
-}
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .nav {
@@ -73,7 +74,15 @@ body {
   height: 500px;
 }
 
+.btn-primary {
+    background-color: #B92800;
+    border-color: #B92800;
+}
 
+.btn-primary:focus {
+    background-color: #B92800;
+    border-color: #B92800;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
