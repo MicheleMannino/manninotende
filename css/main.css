@@ -9,8 +9,19 @@ body {
 
 .logo {
   margin-top: 5px;
+  display: inline-block;
 }
 
+@media all and (max-width: 1024px) {
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+    .firm_name {
+        display: none;
+    }
+}
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 .navbar {
