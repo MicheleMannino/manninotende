@@ -8,7 +8,6 @@ body {
 }
 
 .logo {
-  margin-top: 5px;
   display: inline-block;
 }
 
@@ -20,6 +19,9 @@ body {
     }
     .firm_name {
         display: none;
+    }
+    .nav {
+        float: left ! important;
     }
 }
 /* CUSTOMIZE THE NAVBAR
@@ -81,7 +83,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
+    max-width: 100%;
   height: 500px;
 }
 
