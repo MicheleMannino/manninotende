@@ -1,5 +1,5 @@
 (function() {
-    $(document).click(function (event) {
+    $(document).on('click, touchstart', function (event) {
         var target = $(event.target);
         var $navbar = $(".navbar-collapse");
         var _opened = $navbar.hasClass("in");
