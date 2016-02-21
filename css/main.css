@@ -193,6 +193,10 @@ body {
         height: 500px;
     }
 
+    .carousel-item img {
+        width: 100%;
+    }
+
     .featurette-heading {
         font-size: 40px;
     }
