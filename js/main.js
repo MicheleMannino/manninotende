@@ -13,9 +13,15 @@
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
+                var navbarHeight = 0;
+                if (this.hash.indexOf('top') == -1)
+                    navbarHeight = $('.navbar-header').height() + 50;
                 $('html, body').animate({
-                    scrollTop: target.offset().top - $('.navbar-header').height() - 50
+                    scrollTop: target.offset().top - navbarHeight
                 }, 1000);
+                return false;
+            } else {
+                $('html,body').animate({scrollTop: 0},'slow');
                 return false;
             }
         }
@@ -25,7 +31,7 @@
         $('#top-link-block').removeClass('hidden').affix({
             offset: {top:100}
         }).on('click', function() {
-            $('html,body').animate({scrollTop:0},'slow');
+            $('html,body').animate({scrollTop: 0},'slow');
             return false;
         });
     }
