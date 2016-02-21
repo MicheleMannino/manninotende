@@ -12,16 +12,21 @@
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            var $navbar = $(".navbar-collapse");
             if (target.length) {
                 var navbarHeight = 0;
                 if (this.hash.indexOf('top') == -1)
-                    navbarHeight = $('.navbar-header').height() + 50;
+                    navbarHeight = $('.navbar-header').height();
                 $('html, body').animate({
                     scrollTop: target.offset().top - navbarHeight
-                }, 1000);
+                }, 1000, function() {
+                    $navbar.collapse('hide');
+                });
                 return false;
             } else {
-                $('html,body').animate({scrollTop: 0},'slow');
+                $('html,body').animate({scrollTop: 0}, 'slow', function() {
+                    $navbar.collapse('hide');
+                });
                 return false;
             }
         }
