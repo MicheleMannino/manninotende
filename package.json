@@ -1,0 +1,32 @@
+{
+  "name": "manninotende",
+  "version": "1.0.0",
+  "description": "Mannino Tende Website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicheleMannino/manninotende.git"
+  },
+  "keywords": [
+    "manninotende"
+  ],
+  "author": "michele.mannino@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MicheleMannino/manninotende/issues"
+  },
+  "homepage": "https://github.com/MicheleMannino/manninotende#readme",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-filerev": "^2.3.1"
+  }
+}
