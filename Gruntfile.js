@@ -1,6 +1,16 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
+        copy: {
+            dist: {
+                files: [
+                    // includes files within path
+                    {expand: true, src: ['fonts/**/*'], dest: 'dist', filter: 'isFile'},
+                    {expand: true, src: ['images/**/*'], dest: 'dist', filter: 'isFile'},
+                    {expand: true, src: ['fancybox/**/*'], dest: 'dist', filter: 'isFile'}
+                ]
+            }
+        },
         imagemin: {                          // Task
             static: {                          // Target
                 options: {                       // Target options
@@ -30,24 +40,52 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        htmlmin: {
+            dist: {                                      // Target
+                options: {                                 // Target options
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: {                                   // Dictionary of files
+                    'dist/index.html': 'index.html',     // 'destination': 'source'
+                    'dist/gallery.html': 'gallery.html',
+                    'dist/promo.html': 'promo.html'
+                }
+            }
+        },
+        concat_css: {
+            options: {
+                // Task-specific options go here.
+            },
+            all: {
+                src: ["css/*.css"],
+                dest: "dist/css/main.css"
+            }
+        },
         cssmin: {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'css',
-                    src: ['main.css', '!*.min.css'],
-                    dest: 'css',
+                    cwd: 'dist/css',
+                    src: ['*.css'],
+                    dest: 'dist/css',
                     ext: '.min.css'
                 }]
+            }
+        },
+        concat: {
+            dist: {
+                src: ['js/*.js'],
+                dest: 'dist/js/main.js'
             }
         },
         uglify: {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'js',
+                    cwd: 'dist/js',
                     src: ['main.js', '!*.min.js'],
-                    dest: 'js',
+                    dest: 'dist/js',
                     ext: '.min.js'
                 }]
             }
@@ -55,7 +93,7 @@ module.exports = function(grunt) {
         watch: {
             cssmin: {
                 files: 'css/*.css',
-                tasks: ['cssmin'],
+                tasks: ['concat_css', 'cssmin'],
                 options: {
                     debounceDelay: 250
                 }
@@ -66,6 +104,13 @@ module.exports = function(grunt) {
                 options: {
                     debounceDelay: 250
                 }
+            },
+            htmlmin: {
+                files: '*.html',
+                tasks: ['htmlmin'],
+                options: {
+                    debounceDelay: 250
+                }
             }
         }
     });
@@ -73,7 +118,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.registerTask('default', ['cssmin', 'uglify', 'imagemin', 'watch']);
+    grunt.loadNpmTasks('grunt-concat-css');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.registerTask('default', ['copy', 'htmlmin', 'concat_css', 'cssmin', 'concat', 'uglify', 'imagemin', 'watch']);
 
 };
