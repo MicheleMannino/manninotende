@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+
 
   </head>
 <!-- NAVBAR
@@ -40,116 +42,81 @@
                   <li><a href="#">Galleria</a></li>
               </ul>
           </div>
+
       </div>
   </nav>
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-    <div class="container" style="margin-top: 50px">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Galleria</h1>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail fancybox" href="images/img_1_1.jpg" data-fancybox-group="gallery"
-                        title="Chalet Nerina - Porto San Giorgio">
-                    <img class="img-responsive" src="images/img_1_1.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail fancybox" href="images/img_1_2.jpg" data-fancybox-group="gallery"
-                        title="Chalet Nerina - Porto San Giorgio">
-                    <img class="img-responsive" src="images/img_1_2.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail fancybox" href="images/img_1_3.jpg" data-fancybox-group="gallery"
-                        title="Osteria Nonna Nina">
-                    <img class="img-responsive" src="images/img_1_3.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail fancybox" href="images/img_1_4.jpg" data-fancybox-group="gallery"
-                        title="Osteria Nonna Nina">
-                    <img class="img-responsive" src="images/img_1_4.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail fancybox" href="images/img_2_1.jpg" data-fancybox-group="gallery"
-                        title="Chalet Florinda - Porto San Giorgio">
-                    <img class="img-responsive" src="images/img_2_1.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail fancybox" href="images/img_2_2.jpg" data-fancybox-group="gallery"
-                        title="Chalet Florinda - Porto San Giorgio">
-                    <img class="img-responsive" src="images/img_2_2.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail fancybox" href="images/img_2_3.jpg" data-fancybox-group="gallery"
-                        title="Chalet Tropical - Porto San Giorgio">
-                    <img class="img-responsive" src="images/img_2_3.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail fancybox" href="images/img_2_4.jpg" data-fancybox-group="gallery">
-                    <img class="img-responsive" src="images/img_2_4.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail fancybox" href="images/img_3_1.jpg" data-fancybox-group="gallery"
-                        title="Caff&egrave; Florian">
-                    <img class="img-responsive" src="images/img_3_1.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail fancybox" href="images/img_3_2.jpg" data-fancybox-group="gallery"
-                        title="Caff&egrave; Florian">
-                    <img class="img-responsive" src="images/img_3_2.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail fancybox" href="images/img_3_3.jpg" data-fancybox-group="gallery">
-                    <img class="img-responsive" src="images/img_3_3.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail fancybox" href="images/img_3_4.jpg" data-fancybox-group="gallery">
-                    <img class="img-responsive" src="images/img_3_4.jpg" alt="" />
-                </a>
-            </div>
+  <div class="container" style="margin-top: 50px">
+      <div class="container">
+          <h1>Galleria</h1>
+          <blockquote>
+              <p>Clicca le immagini per ingrandire</p>
+          </blockquote>
+          <br>
+          <!-- The container for the list of example images -->
+        <div id="links">
+            <a href="images/img_1_1.jpg" data-gallery="" title="Chalet Nerina - Porto San Giorgio"><img src="images/img_1_1.jpg" width="200"></a>
+            <a href="images/img_1_2.jpg" data-gallery="" title="Chalet Nerina - Porto San Giorgio"><img src="images/img_1_2.jpg" width="200"></a>
+            <a href="images/img_1_2.jpg" data-gallery="" title="Osteria Nonna Nina"><img src="images/img_1_3.jpg" width="200"></a>
+            <a href="images/img_1_2.jpg" data-gallery="" title="Osteria Nonna Nina"><img src="images/img_1_4.jpg" width="200"></a>
+            <a href="images/img_1_1.jpg" data-gallery="" title="Chalet Florinda - Porto San Giorgio"><img src="images/img_2_1.jpg" width="200"></a>
+            <a href="images/img_1_2.jpg" data-gallery="" title="Chalet Florinda - Porto San Giorgio"><img src="images/img_2_2.jpg" width="200"></a>
+            <a href="images/img_1_2.jpg" data-gallery="" title="Chalet Tropical - Porto San Giorgio"><img src="images/img_2_3.jpg" width="200"></a>
+            <a href="images/img_1_2.jpg" data-gallery=""><img src="images/img_2_4.jpg" width="200"></a>
+            <a href="images/img_1_1.jpg" data-gallery="" title="Caffè Florian"><img src="images/img_3_1.jpg" width="200"></a>
+            <a href="images/img_1_2.jpg" data-gallery="" title="Caffè Florian"><img src="images/img_3_2.jpg" width="200"></a>
+            <a href="images/img_1_2.jpg" data-gallery=""><img src="images/img_3_3.jpg" width="200"></a>
+            <a href="images/img_1_2.jpg" data-gallery=""><img src="images/img_3_4.jpg" width="200"></a>
+            <br>
         </div>
-
-        <hr>
-
       <!-- FOOTER -->
-      <footer>
+      <footer class="footer-gallery">
         <p>&copy; MG Corredo &amp; Arredo 2000 &middot; Copyright @2014 &middot; <a href="mailto:corredoarredo2000@gmail.com">corredoarredo2000@gmail.com</a>
         </p>
       </footer>
 
     </div><!-- /.container -->
 
+
+  <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+  <div id="blueimp-gallery" class="blueimp-gallery">
+      <!-- The container for the modal slides -->
+      <div class="slides"></div>
+      <!-- Controls for the borderless lightbox -->
+      <h3 class="title"></h3>
+      <a class="prev">‹</a>
+      <a class="next">›</a>
+      <a class="close">×</a>
+      <a class="play-pause"></a>
+      <ol class="indicator"></ol>
+      <!-- The modal dialog, which will be used to wrap the lightbox content -->
+      <div class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title"></h4>
+                  </div>
+                  <div class="modal-body next"></div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default pull-left prev">
+                          <i class="glyphicon glyphicon-chevron-left"></i>
+                          Previous
+                      </button>
+                      <button type="button" class="btn btn-primary next">
+                          Next
+                          <i class="glyphicon glyphicon-chevron-right"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="js/main.min.js"></script>
-    <!-- Add mousewheel plugin (this is optional) -->
-    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-          $(".fancybox").fancybox();
-      });
-    </script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
   </body>
 </html>

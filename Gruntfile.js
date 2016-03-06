@@ -1,13 +1,16 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
+        clean: {
+            dist: ["dist"]
+        },
         copy: {
             dist: {
                 files: [
                     // includes files within path
                     {expand: true, src: ['fonts/**/*'], dest: 'dist', filter: 'isFile'},
                     {expand: true, src: ['images/**/*'], dest: 'dist', filter: 'isFile'},
-                    {expand: true, src: ['fancybox/**/*'], dest: 'dist', filter: 'isFile'}
+                    {expand: true, src: ['js/bootstrap-image-gallery.min.js'], dest: 'dist', filter: 'isFile'}
                 ]
             }
         },
@@ -75,7 +78,7 @@ module.exports = function(grunt) {
         },
         concat: {
             dist: {
-                src: ['js/*.js'],
+                src: ['js/main.js'],
                 dest: 'dist/js/main.js'
             }
         },
@@ -123,6 +126,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-concat-css');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.registerTask('default', ['copy', 'htmlmin', 'concat_css', 'cssmin', 'concat', 'uglify', 'imagemin', 'watch']);
 
 };

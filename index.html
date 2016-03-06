@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -46,7 +47,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="#top">Home</a></li>
-              <li><a href="promo.html">Promo 2015</a></li>
+              <li><a href="#promo">Promo 2016</a></li>
               <li><a href="gallery.html">Galleria</a></li>
               <li><a href="#services">Servizi</a></li>
               <li><a href="#about_us">Chi siamo</a></li>
@@ -74,9 +75,9 @@
               </div>
               <div class="container">
                   <div class="carousel-caption">
-                      <h1>Promozione Stagione 2015</h1>
-                      <p>Sono disponibili le nuove offerte della stagione 2015!!!</p>
-                      <p><a class="btn btn-lg btn-primary" href="promo.html" role="button">Guarda il volantino</a></p>
+                      <h1>Promozione Stagione 2016</h1>
+                      <p>Sono disponibili le nuove offerte della stagione 2016!!!</p>
+                      <p><a class="btn btn-lg btn-primary" href="#promo" role="button">Guarda il volantino</a></p>
                   </div>
               </div>
           </div>
@@ -163,6 +164,23 @@
 
       <hr class="featurette-divider">
 
+      <div id="promo" class="row featurette">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">Promo 2016</h2>
+          <blockquote>
+            <p>Clicca le immagini per ingrandire</p>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <a href="images/promo_1.png" data-gallery="" title="Promozione 2016"><img src="images/promo_1.png" class="img-responsive"></a>
+        </div>
+        <div class="col-md-6">
+          <a href="images/promo_2.png" data-gallery="" title="Promozione 2016"><img src="images/promo_2.png" class="img-responsive"></a>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
       <div id="about_us" class="row featurette">
         <div class="col-md-5">
           <img class="featurette-image img-responsive" src="images/about_us_2.jpg">
@@ -206,6 +224,40 @@
 
     </div><!-- /.container -->
 
+    <div id="blueimp-gallery" class="blueimp-gallery">
+      <!-- The container for the modal slides -->
+      <div class="slides"></div>
+      <!-- Controls for the borderless lightbox -->
+      <h3 class="title"></h3>
+      <a class="prev">‹</a>
+      <a class="next">›</a>
+      <a class="close">×</a>
+      <a class="play-pause"></a>
+      <ol class="indicator"></ol>
+      <!-- The modal dialog, which will be used to wrap the lightbox content -->
+      <div class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" aria-hidden="true">&times;</button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body next"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default pull-left prev">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+                Previous
+              </button>
+              <button type="button" class="btn btn-primary next">
+                Next
+                <i class="glyphicon glyphicon-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <span id="top-link-block" class="hidden">
       <a href="#top" class="well well-sm">
         <i class="glyphicon glyphicon-chevron-up"></i>
@@ -215,5 +267,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="js/main.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
   </body>
 </html>
